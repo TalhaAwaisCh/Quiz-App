@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="pQuiz.css">
+    <script src="pQuiz.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading1">
+            <h1>Welcome to our Quiz</h1>
+        <p>Note Each Question contains 1 Mark</p>
+        </div>
+        <div class="Question1">
+            <h1>Question1</h1>
+            <p>The Second Largest city of Pakistan.</p>
+            <form id="quizForm1">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option1" id="Option1" value="Lahore">
+                    <label class="form-check-label" for="Option1">Lahore</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option1" id="Option2" value="Quetta">
+                    <label class="form-check-label" for="Option2">Quetta</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option1" id="Option3" value="Islamabad">
+                    <label class="form-check-label" for="Option3">Islamabad</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option1" id="Option4" value="Swat">
+                    <label class="form-check-label" for="Option4">Swat</label>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="checkAnswer1()">Submit</button>
+                <div id="coption1"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Question2">
+            <h1>Question2</h1>
+            <p>The United Nations was founded on.</p>
+            <form id="quizForm2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option2" id="Option2_1" value="Octobar 24,1945">
+                    <label class="form-check-label" for="Option2_1">Octobar 24, 1945</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option2" id="Option2_2" value="Octobar 24,1943">
+                    <label class="form-check-label" for="Option2_2">Octobar 24, 1943</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option2" id="Option2_3" value="Octobar 24,1950">
+                    <label class="form-check-label" for="Option2_3">Octobar 24, 1950</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option2" id="Option2_4" value="Octobar 24,1955">
+                    <label class="form-check-label" for="Option2_4">Octobar 24, 1955</label>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="checkAnswer2()">Submit</button>
+                <div id="coption2"></div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="Question3">
+            <h1>Question3</h1>
+            <p>Which is the capital of Angola</p>
+            <form id="quizForm3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option3" id="Option3_1" value="Karachi" >
+                    <label class="form-check-label" for="Option3_1">Karachi </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option3" id="Option3_2" value="Lunda">
+                    <label class="form-check-label" for="Option3_2">Lunda</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option3" id="Option3_3" value="Manama">
+                    <label class="form-check-label" for="Option3_3">Manama</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option4" id="Option3_4" value="Buku">
+                    <label class="form-check-label" for="Option3_4">Buku</label>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="checkAnswer3()">Submit</button>
+                <div id="coption3"></div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="Question4">
+            <h1>Question4</h1>
+            <p>The Member of SAARc</p>
+            <form id="quizForm4">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option4" id="Option4_1" value="4" >
+                    <label class="form-check-label" for="Option4_1">4</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option4" id="Option4_2" value="5">
+                    <label class="form-check-label" for="Option4_2">5</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option4" id="Option4_3" value="7">
+                    <label class="form-check-label" for="Option4_3">7</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option4" id="Option4_4" value="8">
+                    <label class="form-check-label" for="Option4_4">8</label>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="checkAnswer4()">Submit</button>
+                <div id="coption4"></div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="Question5">
+            <h1>Question5</h1>
+            <p>There are _________ non-permanent members of the security council.
+                
+                </p>
+            <form id="quizForm5">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option5" id="Option5_1" value="5" >
+                    <label class="form-check-label" for="Option5_1">5</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option5" id="Option5_2" value="10">
+                    <label class="form-check-label" for="Option5_2">10</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option5" id="Option5_3" value="15">
+                    <label class="form-check-label" for="Option5_3">15</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Option5" id="Option5_4" value="8">
+                    <label class="form-check-label" for="Option5_4">8</label>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="checkAnswer5()">Submit</button>
+                <div id="coption5"></div>
+            </form>
+        </div>
+    </div>
+
+
+   
+        <button  style="margin-left: 40%;" type="submit" class="btn btn-primary"><a href="Index.html">Add your Question </a></button>
+
+
+
+
+</body>
+</html>

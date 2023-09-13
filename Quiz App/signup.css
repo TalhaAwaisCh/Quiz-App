@@ -1,0 +1,25 @@
+body
+{
+    background-color: black;
+    color: brown;
+
+}
+.heading2
+{
+    text-align: center;
+    margin: 30px
+    ;
+}
+
+
+.submit
+{
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 90%;
+    
+}
+a
+{
+    color: aliceblue;
+}

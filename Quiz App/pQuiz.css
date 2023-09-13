@@ -1,0 +1,32 @@
+body
+{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+.heading1
+{
+    text-align: center;
+    margin: 5%;
+
+}
+.Question1,.Question2 , .Question3, .Question4 , .Question5
+{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+a
+{
+    text-align: center;
+    color: aliceblue;
+ 
+}
+
+button
+{
+    text-align: center;
+    font-size: 40px;
+}

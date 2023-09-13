@@ -1,0 +1,46 @@
+.heading
+{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+body
+{
+    background-color: black;
+    color: aliceblue;
+    
+
+}
+.data 
+{
+    margin-left: 30%;
+    
+}
+.cAnswer
+{
+    width: 50%;
+    margin-left: 22%;
+}
+.submit1
+{
+    width: 100%;
+    font-size: 30px;
+    margin-left: 70%;
+    margin-top: 10px;
+    color: brown;
+}
+.container {
+    margin-top: 2px;
+    margin-bottom: 3%;
+    background-color: brown;
+  
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;  
+}
+
+#fQuestion,#Option1,#Option2,#Option3,#Option4,#cAnswer
+{
+    margin-left: 10%;
+    margin-bottom:10%;
+}

@@ -1,0 +1,23 @@
+body
+{
+    background-color: black;
+    color: brown;
+    margin:5%;
+}
+#loginp
+{
+    text-align: center;
+    margin-top: 5%;
+    background-color: black;
+    font-size: 30px;
+
+}
+a
+{
+    background-color: black;
+    color: brown;
+    border: none;
+    border-radius: 10%;
+    width: 100px;
+    padding: 30px;
+}

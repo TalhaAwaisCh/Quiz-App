@@ -1,0 +1,39 @@
+body
+{
+    background-color: black;
+    color: brown;
+
+}
+.heading
+{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+.button
+{
+    text-align: center;
+    margin-top: 10%;
+}
+.option
+{
+    text-align: center;
+    width: fit-content;
+    margin-top: 10%;
+    border: 2px solid ;
+    border-radius: 50%;
+}
+
+.opt
+{
+    margin-left: 28%;
+}
+.displayQuestion
+{
+    font-size: 32px;
+    margin-left: 19%;
+    margin-bottom: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

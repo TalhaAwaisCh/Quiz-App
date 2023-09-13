@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="display.css">
+    <title>Display Question</title>
+
+</head>
+<body>
+
+    <div class="heading">
+        <h1>Welcome to our site</h1>
+    </div>
+    
+    <div class="displayQuestion"></div>
+    <div class="displayOption"></div>
+
+   <div class="button">
+    <button type="button" class="btn btn-primary" onclick="goToAddQuestionPage()">Add Another Question</button>
+
+   </div>
+
+
+    <script>
+        const questionData = JSON.parse(localStorage.getItem('questionData'));
+
+        if (questionData) {
+            const { question, options } = questionData;
+
+            const questionElement = document.querySelector('.displayQuestion');
+            questionElement.textContent = "Question: " + question;
+
+            const optionsElement = document.querySelector('.displayOption');
+            optionsElement.innerHTML = `
+                <div class="opt">
+                    <ul>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="Option1"  >
+                            <label class="form-check-label" for="Option1_1">${options.option1}</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="Option2"  >
+                            <label class="form-check-label" for="Option1_2">${options.option2}</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="Option3"  >
+                            <label class="form-check-label" for="Option1_3">${options.option3}</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="Option4" >
+                            <label class="form-check-label" for="Option1_4">${options.option4}</label>
+                        </div>
+                     <div class="option">
+
+
+                        <button type="button" onclick="alert('${"The corect Answer is "+options.correctAnswer}')">Show Answer</button>                       
+                        </div>
+                            
+
+                    </ul>
+                </div>`;
+        }
+
+        function goToAddQuestionPage() {
+            window.location.href = 'index.html';
+        }
+
+
+   
+
+
+ 
+
+
+
+
+
+    </script>
+</body>
+</html>
